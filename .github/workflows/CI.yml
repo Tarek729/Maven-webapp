@@ -13,7 +13,12 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
+permissions:
+  contents: read
+  id-token: write
+  security-events: write  # Required for dependency submission
+  
 jobs:
   build:
 
